@@ -12,9 +12,10 @@
         text-align: center;
         margin-bottom: 20px;
         background-color: teal;
-        border-radius: 15px;
+        border-radius: 25px;
         padding: 20px;
         color: white;
+        max-width: 800px;
     }
 
     .section {
