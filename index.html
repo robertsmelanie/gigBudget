@@ -8,5 +8,38 @@
 <body>
     <h1>Welcome to the Gig Worker Budget App</h1>
     <p>Manage your finances effectively as a gig worker.</p>
+    <div class="section">
+        <h2>Income Sources</h2>
+        <div id="income-list">
+            <label>Income Source:
+                <input type="text" placeholder="e.g., Uber" class="income-name">
+                <input type="number" placeholder="Amount" class="income-amount">
+            </label>
+        </div>
+        <button onclick="addIncome()">+ Add Another Income</button>
+    </div>
+    
+    <div class="section">
+        <h2>Expenses</h2>
+        <div id="expense-list">
+            <label>Expense Name:
+                <input type="text" placeholder="e.g., Rent" class="expense-name">
+                <input type="number" placeholder="Amount" class="expense-amount">
+            </label>
+        </div>
+        <button onclick="addExpense()">+ Add Another Expense</button>
+    </div>
+    
+    <div class="section">
+        <button onclick="calculateBudget()">💰 Calculate Budget</button>
+    
+        <div id="results" class="result" style="display:none;">
+            <p><strong>Total Income:</strong> $<span id="total-income">0</span></p>
+            <p><strong>Total Expenses:</strong> $<span id="total-expenses">0</span></p>
+            <p><strong>Estimated Taxes (25%):</strong> $<span id="taxes">0</span></p>
+            <p><strong>Spendable Income:</strong> $<span id="spendable">0</span></p>
+        </div>
+    </div>
+
 </body>
 </html>
