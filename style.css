@@ -10,7 +10,7 @@
     }
     .top {
         text-align: center;
-        margin-bottom: 20px;
+        margin: 20px auto;
         background-color: teal;
         border-radius: 25px;
         padding: 20px;
